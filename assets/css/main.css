@@ -1,0 +1,17 @@
+.tt-menu{
+    background-color: whitesmoke;
+    width: 100%;
+    border: solid darkgrey 1px;
+}
+
+.tt-menu div {
+    padding: 5px;
+}
+
+.tt-cursor{
+    background-color: #00a7d0;
+}
+
+.fc-view-container {
+    border: solid 1px lightgray;
+}

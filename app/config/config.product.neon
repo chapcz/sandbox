@@ -1,0 +1,17 @@
+parameters:
+
+
+
+
+doctrine:
+	user: 'user'
+	password: 'password'
+	dbname: 'dbname'
+	metadataCache: default
+	queryCache: default
+	autoGenerateProxyClasses: false
+	metadata:
+		App: %appDir%/model/entities
+
+services:
+    - Nextras\MailPanel\FileMailer

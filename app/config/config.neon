@@ -1,0 +1,70 @@
+# WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+# https://nette.org/security-warning
+
+parameters:
+
+
+php:
+	date.timezone: Europe/Prague
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+
+session:
+	expiration: 14 days
+	savePath: "%tempDir%/sessions"
+
+
+services:
+	router: App\RouterFactory::createRouter
+	- Chap\BaseGrid
+	- Chap\BaseForm
+	- chap\Prihlasovac  # simple auth
+	#- App\BaseAuthenticator
+	- Chap\GridTester
+	- App\AdminModule\Forms\IFormTesterFactory
+	- App\AdminModule\Forms\IWysiwygTesterFactory
+	- Chap\Doctrine\UserFacade
+
+	-
+	    implement: Chap\IEntityFormFactory
+	    inject: on
+	cssMin: Joseki\Webloader\CssMinFilter
+	jsMin: Joseki\Webloader\JsMinFilter
+
+
+extensions:
+	navigation: Kollarovic\Navigation\DI\Extension
+	admin: Kollarovic\Admin\DI\Extension
+	translation: Kdyby\Translation\DI\TranslationExtension
+	console: Kdyby\Console\DI\ConsoleExtension
+	events: Kdyby\Events\DI\EventsExtension
+	annotations: Kdyby\Annotations\DI\AnnotationsExtension
+	doctrine: Kdyby\Doctrine\DI\OrmExtension
+	validator: Kdyby\Validator\DI\ValidatorExtension
+	doctrineForms: Kdyby\DoctrineForms\DI\FormsExtension
+	webloader: WebLoader\Nette\Extension
+
+translation:
+    default: en
+    fallback: [en]
+    whitelist: [cs, en, de]
+
+includes:
+    - admin.neon
+
+webloader:
+	css:
+		front:
+			files:
+				- %appDir%/../assets/css/main.css
+				- %appDir%/../assets/css/front.min.css
+	js:
+		front:
+			files:
+				- %appDir%/../assets/js/front.min.js
+				- %appDir%/../assets/js/main.js

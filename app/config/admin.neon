@@ -1,0 +1,49 @@
+navigation:
+	admin:
+		label: Dashboard
+		link: Homepage:default
+		icon: fa-dashboard
+		items:
+			dashboard:
+				label: Dashboard
+				link: Homepage:default
+				icon: fa-dashboard
+			showitems:
+				label: Items
+				icon: fa-dashboard
+				items:
+					table:
+						label: Table
+						link: Homepage:table
+						icon: fa-table
+					form:
+						label: Form
+						link: Homepage:form
+						icon: fa-table
+					cal:
+						label: Calendar
+						link: Homepage:cal
+						icon: fa-calendar
+					wys:
+						label: Wysiwyg
+						link: Homepage:wysiwyg
+						icon: fa-calendar
+			frontpage:
+				label: Front Page
+				link: :Homepage:default
+				icon: fa-home
+
+
+
+admin:
+	skin: red #red blue green yellow purple black
+	files:
+		- %appDir%/../assets/css/admin.min.css
+		- %appDir%/../assets/css/main.css
+		- %appDir%/../assets/js/admin.min.js
+		- %appDir%/../assets/js/main.js
+
+	login:
+		pageMsg: "Please log in"
+		usernameType: text
+

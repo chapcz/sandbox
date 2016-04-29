@@ -1,0 +1,8 @@
+npm install -g grunt-cli
+npm install load-grunt-tasks grunt-contrib-uglify grunt-contrib-copy grunt-contrib-concat grunt-contrib-jshint grunt-contrib-less grunt-contrib-watch jshint-stylish
+bower update
+
+
+grunt concat:front
+grunt less:front
+grunt uglify

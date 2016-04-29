@@ -1,0 +1,23 @@
+{
+  "name": "chap.cz",
+  "dependencies": {
+    "bootstrap": "~3.3.0",
+    "bootbox": "*",
+    "fullcalendar": "*",
+    "moment": "*",
+    "font-awesome": "*",
+    "bootstrap-maxlength": "*",
+    "nette.ajax.js": "*",
+    "nette-live-form-validation": "*",
+    "typeahead.js": "~0.11.1",
+    "typeahead.js-bootstrap3.less": "*",
+    "jquery-hashchange": "git://github.com/sapzxc/jquery-hashchange",
+    "jquery.maskedinput": "*",
+    "ublaboo-datagrid": "*",
+    "tinymce": "*"
+  },
+  "resolutions": {
+    "typeahead.js": "~0.11.1",
+    "bootstrap": "~3.3.0"
+  }
+}

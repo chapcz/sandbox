@@ -1,0 +1,47 @@
+{
+	"name": "chapcz/admin-project",
+	"description": "Prepaired Web project wit Admin module",
+	"type": "project",
+	"license": ["MIT", "BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"minimum-stability": "dev",
+	"require": {
+		"php": ">= 5.3",
+		"nette/application": "^2.3.6",
+		"nette/bootstrap": "^2.3",
+		"nette/caching": "^2.3",
+		"nette/database": "^2.3",
+		"nette/di": "^2.3",
+		"nette/finder": "^2.3",
+		"nette/forms": "^2.3",
+		"nette/http": "^2.3",
+		"nette/mail": "^2.3",
+		"nette/robot-loader": "^2.3",
+		"nette/safe-stream": "^2.3",
+		"nette/security": "^2.3",
+		"nette/utils": "^2.3",
+		"latte/latte": "^2.3",
+		"tracy/tracy": "^2.3",
+		"janmarek/webloader": "dev-master",
+		"chapcz/admin": "dev-master",
+		"kdyby/doctrine": "dev-master",
+		"instante/bootstrap-3-renderer": "dev-master",
+		"ublaboo/datagrid": "dev-master",
+		"leafo/lessphp": "dev-master",
+		"leafo/scssphp": "dev-master",
+		"nextras/mail-panel": "dev-master",
+		"nextras/secured-links": "dev-master",
+		"kdyby/doctrine-magic-accessors":"dev-master",
+		"kdyby/doctrine-collections-lazy": "dev-master",
+		"kdyby/doctrine-collections-readonly": "v0.2",
+		"joseki/webloader-filters": "dev-master",
+		"chapcz/doctrine-forms": "dev-master",
+		"ondrejbrejla/eciovni": "dev-master",
+		"kdyby/autowired":"dev-master",
+		"kdyby/console": "dev-master",
+		"vojtech-dobes/nette-ajax-history": "2.0.0"
+
+	},
+	"require-dev": {
+		"nette/tester": "^1.6"
+	}
+}

@@ -13,9 +13,11 @@ doctrine:
 	metadata:
 		App: %appDir%/model/entities
 
-services:
-    - Nextras\MailPanel\FileMailer(%tempDir%/mails)
-
 tracy:
     bar:
-        - Nextras\MailPanel\MailPanel(%tempDir%/cache)
+        - Nextras\MailPanel\MailPanel(%tempDir%/mail-panel-latte)
+
+services:
+    nette.mailer:
+        class: Nette\Mail\IMailer
+        factory: Nextras\MailPanel\FileMailer(%tempDir%/mail-panel-mails)

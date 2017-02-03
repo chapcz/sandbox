@@ -13,5 +13,3 @@ doctrine:
 	metadata:
 		App: %appDir%/model/entities
 
-services:
-    - Nextras\MailPanel\FileMailer
